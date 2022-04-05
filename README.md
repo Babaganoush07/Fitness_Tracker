@@ -45,7 +45,7 @@ List the ready features here:
 
 ## Setup
 - I used [Pydroid 3](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3&gl=US) to use it on my phone.
-- You will need the PT pickle file for the Daily PT to work.
+- You will need the [year_pt](https://github.com/Babaganoush07/fitness/blob/main/year_pt.pkl) pickle file for the Daily PT to work.
 
 
 ## Project Status
