@@ -23,6 +23,7 @@
 - Sqlite3
 - re (Regular Expressions)
 - Pickle
+- colorama (Non-GUI Version)
 
 
 ## Features
