@@ -1,3 +1,6 @@
+import time
+import os
+
 def inputNumber(message):
   while True:
     try:
@@ -17,7 +20,8 @@ def progress(total,goal):
 #MAIN PROGRAM STARTS HERE:
 goal = inputNumber("Goal: ")
 total = 0
-import os
+start = time.time()
+
 
 while total != goal:
   # Do this every time
@@ -30,6 +34,11 @@ while total != goal:
   else:
     reps = inputNumber("Reps: ")
     total += reps
+  # Show the duration at program end
+  if total >= goal:
+    end = time.time()
+    print(time.strftime("%H:%M:%S", time.gmtime(end - start)))
 
+# Print the last progress bar at 100% or more
 if total <= goal:
   progress(total,goal)
