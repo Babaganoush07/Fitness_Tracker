@@ -73,14 +73,15 @@ def get_totals(table):
                 average_pace = '00:00'
 
             # Print the totals:
-            print(f"{events[e].upper():-^30}")
+            header = len(total_time) + 18
+            print(f"{events[e].upper():-^{header}}")
             print(f"{'Total Days:':>15} {len(total_days)}")
             print(f"{'Total Miles:':>15} {round(total_miles,2)}")
             print(f"{'Daily Average:':>15} {daily_average}")
             print(f"{'Total Time:':>15} {total_time}")
             print(f"{'Average Pace:':>15} {average_pace}")
             print(f"{'Elevation Gain:':>15} {total_elevation}")
-            print(f"{'-':-^30}\n")
+            print(f"{'-':-^{header}}\n")
 
 all_tables = combine_all_tables()
 get_totals(all_tables)
